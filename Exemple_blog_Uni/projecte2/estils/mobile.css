@@ -1,0 +1,89 @@
+body.contenidor-general {
+    width: 100%;
+}
+figure.logo {
+    position: relative;
+    top: 10px;
+    left:0px;
+    float: center;
+}
+header{
+    height: 90px;
+    position:left;
+}
+
+.xarxes-socials {
+    position: relative;
+    top: 0px;
+    right: 20px;
+    float: right;
+}
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0 10px 0;
+    padding: 5px;
+}
+
+/* ————————————————————————————————— Index———————————————————————————————————— */
+nav {
+ /* -- caixa index fons-- */
+    height: 25px;
+    margin: 5px;
+    padding: 17px;
+  
+}
+nav li a {
+    font-size: 10px;
+    line-height: 5px;
+
+    padding: 10px;
+ 
+}
+
+.xarxes-socials img {
+	height:20px; 
+	width:20px;
+}
+
+.xarxes-socials img:hover {
+	height:30px; 
+	width:30px;
+}
+
+/* ————————————————————————————————— article———————————————————————————————————— */
+
+article.post h2 a {
+    
+	font-size: 20px;
+    
+}
+section.articles {
+   width: 100%;
+}
+
+article.post .meta {
+    float: left;
+}
+
+article.post div.legirmes a{
+
+    margin: 50px 120px;
+    padding: 5px;
+
+}
+article.post div.legirmes a:hover {
+margin: 50px 120px;
+    padding: 6px;
+}
+
+
+/* ————————————————————————————————— barra lateral ———————————————————————————————————— */
+aside{display: none}
+
+/* ————————————————————————————————— footer  ———————————————————————————————— */
+footer:after{content:" - Mobile Version"}
+footer {
+    width: 100%;
+    
+}

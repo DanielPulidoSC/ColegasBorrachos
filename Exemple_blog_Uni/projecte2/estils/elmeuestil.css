@@ -1,0 +1,458 @@
+/* --- Inici del reset dels estils dels navegadors ---*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+} 
+/* --- Fi del reset dels #eee8d5 estils dels navegadors ---*/
+
+
+
+/* ————— Inici dels estils del contingut de l'etructura ————*/
+body.contenidor-general {
+    font-family: Fantasy,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    position: relative;
+    width: 1023px;
+}
+header, nav, section, article, footer {
+	display: block;
+}
+.enviar{
+background-color:#ecd078;
+color: #5e5c52;
+padding:10px;
+}
+
+
+.enviar:hover {
+background-color:#c39608;
+color: #5e5c52;
+padding:10px;
+}
+/* ————————————————————————————————— Cuadros de Textos———————————————————————————————————— */
+
+h1{
+    color: #5e5c52;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px 0 45px 0;
+    padding: 10px;
+    text-align: center;
+     background: none repeat scroll 0 0 #ecd078;
+    border-top: 20px solid #f4b901; 
+    border-radius: 50px 30px 50px 30px;
+    clear: both;
+    padding: 50px;
+    text-align: center;
+}
+h2{
+    color: #6f5503;
+    font-size: 36px;
+    font-weight: bold;
+    margin: -20px 0 0px 0;
+    padding: 15px;
+    text-align: center;
+    background: none repeat scroll 0 0 #f0b808;
+    border-top: 4px solid #f4b901;
+    clear: both;
+    text-align: center;
+    body-link="#C0C0C0";
+}
+
+
+h3{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px 0 45px 0;
+    padding: 10px;
+    text-align: center;
+    background: none repeat scroll 0 0 #ecd078;
+    border-top: 6px solid #f4b901;
+    clear: both;
+    padding: 50px;
+    text-align: center;
+}
+
+
+h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 0 15px 0;
+    padding: 10px;
+    text-align: center;
+    background: none repeat scroll 0 0 #ecd078;
+    border-top: 6px solid #f4b901;
+    clear: both;
+    padding: 10px;
+ border-radius: 100px 100px 100px 100px;
+    text-align: center;
+}
+
+h4 a {
+ /* -- titol articles— */
+    text-decoration: none;
+    color: #6f5503;
+	font-size: 16px;
+    overflow: hidden;
+}
+h5{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 0 20px 0;
+    padding: 10px;
+    text-align: center;
+    background: none repeat scroll 0 0 #f4e6b9;
+    border-top: 6px solid #f4b901;
+    clear: both;
+    padding: 10px;
+ border-radius: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+/* ————————————————————————————————— Header———————————————————————————————————— */
+
+
+
+header{
+    height: 180px;
+    position: center;
+
+}
+
+ 
+ /* -- Inici dels estils del contingut del header-- */
+figure.logo {
+    position: relative;
+    top: 10px;
+    left:0px;
+    float: center;
+}
+
+
+/* ————————————————————————————————— Index———————————————————————————————————— */
+ 
+ /* -- Inici dels estils de la navegacio -- */
+
+nav {
+ /* -- index -- */
+    height: 20px;
+    margin: 15px;
+    display: block;
+    background: none repeat scroll 0 0 #ecd078;
+    border-top: 5px solid #f4b901; 
+    border-radius: 100px 10px 100px 10px;
+    clear: both;
+    padding: 35px;
+    text-align: center;
+}
+nav li {
+    float: left;
+    display: block;
+    margin: 3px;
+}
+nav li a {
+    color: #000000;
+    font-family: Cursive,arial;
+    font-weight: bold;
+    line-height: 10px;
+    padding: 15px;
+    border-radius: 50px 10px 50px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+}
+nav li a:hover {
+    background-color: #c39608;
+    border: 1px solid #c39608;
+}
+
+
+
+/* ———— Logo RRSS————— */
+
+figure.logo figcaption h1 {
+ /* -- Codi suprimit -- */
+}
+.xarxes-socials {
+    position: relative;
+    top: -15px;
+    right: 20px;
+    float: right;
+}
+.xarxes-socials img {
+    margin: 5px;
+    float:left;
+border-radius: 30px 30px 30px 30px;
+	height:40px; 
+	width:40px;
+}
+
+.xarxes-socials img:hover {
+margin: 5px;
+    float:left;
+border-radius: 30px 30px 30px 30px;
+	height:55px; 
+	width:55px;
+}
+
+/* ————————————————————————————————— article———————————————————————————————————— */
+
+/* ———— estilo texto propio————— */
+article.post h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+article.post h2 a {
+ /* -- titol articles— */
+    text-decoration: none;
+    color: #6f5503;
+	font-size: 30px;
+    overflow: hidden;
+}
+
+   
+/* ———— espacio articulos de la pagina ————— */
+section.articles {
+    width: 630px;
+    margin: 5px;
+    float: left;
+    border-radius: 50px 50px 10px 10px;
+    background-color: #ecd078;
+}
+
+section.articles p.long{
+    width: 630px;
+    float: left;
+    background-color: #ecd078;
+}
+
+
+
+article.post {
+    margin: 10px;
+    border-bottom: 1px solid #ecd078;
+    padding-bottom: 25px;
+    border-top: 1px solid #c39608;
+    padding-top: 20px;
+    overflow: hidden;
+    border-radius: 50px 50px 50px 50px;
+    background-color: #ecd078;
+    border: 1px solid #040404;
+}
+
+/* ———— espacio autor ————— */
+article.post figure {
+    float: right;
+    margin: 35px 10px 10px 10px;
+    width: 70px;
+}
+article.post a img {
+    border: 8px solid #c39608;
+}
+article.post a:hover img {
+    border: 8px solid #c39608;
+}
+
+article.post .meta {
+    float: center;
+    font-family: Fantasy, Arial;
+    font-size: 10px;
+    margin: 5px 250px 0px;
+    
+}
+article.post p.meta {
+ float: center;
+    
+}
+article.post p.meta a {
+    color: #888;
+    text-decoration: none;
+    font-style: italic;
+    float: center;
+}
+article.post p.meta a:hover {
+    color: #c39608;
+    width: 4px;
+}
+article.post p {
+    float: left;
+    width: 150px;
+}
+article.post div.text a{
+    color: white;
+    text-decoration:none;
+    font-style:Fantasy,italic;
+    text-align: right;
+    float: left;
+    background: none repeat scroll 0 0 #c39608;
+    border-radius: 10px 10px 10px 10px;
+    margin: 50px 240px;
+    padding: 10px;
+}
+
+
+/* ———— espacio lleguir mes ————— */
+article.post div.llegirmes {
+    float: center;
+    margin: 30px 1px 0;
+}
+article.post div.legirmes a{
+    color: black;
+    text-decoration:none;
+    font-style:italic;
+    text-align: center;
+    float: center;
+    background: none repeat scroll 0 0 #c39608;
+    border-radius: 50px 50px 50px 50px;
+    margin: 50px 240px;
+    padding: 8px;
+    border: 1px solid #000000;
+}
+article.post div.legirmes a:hover {
+    color: black;
+    text-decoration:none;
+    font-style:italic;
+    text-align: center;
+    float: center;
+    background: #c39608;
+    border-radius: 50px 50px 50px 50px;
+    margin: 50px 240px;
+    padding: 13px;
+    border: 1px solid #000000;
+}
+
+/* ————————————————————————————————— barra lateral ———————————————————————————————————— */
+
+/* ———— estilo texto propio ————— */
+aside h3 {
+    color: #DE4912;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 0 0px 0;
+    padding: 10px;
+    text-align: center;
+   background: none repeat scroll 0 0 #f4b901;
+     border-radius: 100px 100px 10px 10px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* ———— posicion————— */
+div.blocs-aside h3 {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+/* ———— espacio menu lateral de la pagina ————— */
+aside {
+    float: right;
+    width: 370px;
+}
+
+
+aside div.blocs-aside {
+color: #f4b901;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0 15px 0;
+    padding: 10px;
+    text-align: center;
+    background: none repeat scroll 0 0 #f9f0d3;
+    border-radius: 100px 100px 10px 10px;
+    margin: 5px 0;
+    padding: 10px;
+}
+ 
+aside ul {
+    overflow: hidden;
+}
+aside ul.categoria li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #f4b901;
+
+}
+aside ul.categoria li a:hover {
+    font-size: 26px;
+}
+h4:hover {
+    padding: 15px;
+    background: #c39608;
+}
+ 
+aside ul.categoria li {
+    margin: 10px 30px;
+    padding: 0 10px 5px 0;
+    border-bottom: 1px dotted #f4b901;
+ background: none repeat scroll 0 0 #c39608;
+     border-radius: 100px 100px 10px 10px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+
+aside div.blocs-aside p.info {
+    margin: 30px;
+ background: none repeat scroll 0 0 #c39608;
+     border-radius: 100px 10px 10px 100px;
+    margin: 5px 0;
+    padding: 10px;
+}
+div.blocs-aside p.info img {
+    width: 100px;
+    height: 100px;
+    float: riht;
+    margin: 5px 10px;
+
+}
+/* -- Fi de l'estil de la barra latera o aside -- */
+
+
+
+
+/* ————————————————————————————————— footer  ———————————————————————————————— */
+
+/* ———— espacio footer de la pagina ————— */
+footer {
+    background: none repeat scroll 0 0 #ecd078;
+    border-top: 6px solid #f4b901;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.footer li a {
+    color: #333;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: none;
+}
+nav.footer {
+    background: none repeat scroll 0 0 #c39608;
+    height: 30px;
+    margin: 0 0 10px;
+    padding: 0 18%;
+}
+nav.footer li a:hover{
+     background:none;
+     border: none;
+     color: #c39608;
+}
+/* -- Fi de l'estil del footer -- */
