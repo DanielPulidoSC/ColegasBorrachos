@@ -1,0 +1,34 @@
+/*  Sentències de creació de taules */
+create table tipus
+(nomT char(50), 
+primary key (nomT));
+
+create table població
+(nomP char(50), 
+barri char(50), 
+primary key (nomP,barri));
+
+create table bar(
+nom char(50),
+carrer char(50), 
+preu_birra float, 
+nomP char(50), 
+barri char(50),
+nomT char(50), 
+primary key (nom,nomP,barri,nomT),
+foreign key (nomP,barri) references població,
+foreign key (nomT) references tipus);
+
+
+/*  Sentències d'inserció */
+insert into tipus values('disco');
+insert into tipus values('de tapes'); 
+
+insert into població values('SBD','centre'); 
+insert into població values('Barna','LC');  
+
+insert into població values('SBD','sud'); 
+insert into població values('Barna','FP'); 
+
+insert into bar values('Xuang','Muntaner 65',1,'SBD','centre','disco'); 
+insert into bar values('Foned','Baba 100',1.5,'SBD','centre','disco'); 
