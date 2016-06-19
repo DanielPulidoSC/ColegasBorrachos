@@ -32,3 +32,8 @@ insert into població values('Barna','FP');
 
 insert into bar values('Xuang','Muntaner 65',1,'SBD','centre','disco'); 
 insert into bar values('Foned','Baba 100',1.5,'SBD','centre','disco'); 
+
+/*  Sentències de neteja de taules */
+delete from tipus;
+delete from població;
+delete from bar;
