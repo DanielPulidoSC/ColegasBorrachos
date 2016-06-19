@@ -1,0 +1,167 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.5
+-- Dumped by pg_dump version 9.4.5
+-- Started on 2016-06-19 09:44:32
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 175 (class 3079 OID 11855)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2014 (class 0 OID 0)
+-- Dependencies: 175
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 174 (class 1259 OID 17507)
+-- Name: bar; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE bar (
+    nom character(50) NOT NULL,
+    carrer character(50),
+    preu_birra double precision,
+    nomp character(50) NOT NULL,
+    barri character(50) NOT NULL,
+    nomt character(50) NOT NULL
+);
+
+
+ALTER TABLE bar OWNER TO postgres;
+
+--
+-- TOC entry 173 (class 1259 OID 17486)
+-- Name: població; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE "població" (
+    nomp character(50) NOT NULL,
+    barri character(50) NOT NULL
+);
+
+
+ALTER TABLE "població" OWNER TO postgres;
+
+--
+-- TOC entry 172 (class 1259 OID 17481)
+-- Name: tipus; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE tipus (
+    nomt character(50) NOT NULL
+);
+
+
+ALTER TABLE tipus OWNER TO postgres;
+
+--
+-- TOC entry 2006 (class 0 OID 17507)
+-- Dependencies: 174
+-- Data for Name: bar; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2005 (class 0 OID 17486)
+-- Dependencies: 173
+-- Data for Name: població; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2004 (class 0 OID 17481)
+-- Dependencies: 172
+-- Data for Name: tipus; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 1892 (class 2606 OID 17511)
+-- Name: bar_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY bar
+    ADD CONSTRAINT bar_pkey PRIMARY KEY (nom, nomp, barri, nomt);
+
+
+--
+-- TOC entry 1890 (class 2606 OID 17490)
+-- Name: població_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY "població"
+    ADD CONSTRAINT "població_pkey" PRIMARY KEY (nomp, barri);
+
+
+--
+-- TOC entry 1888 (class 2606 OID 17485)
+-- Name: tipus_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY tipus
+    ADD CONSTRAINT tipus_pkey PRIMARY KEY (nomt);
+
+
+--
+-- TOC entry 1893 (class 2606 OID 17512)
+-- Name: bar_nomp_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY bar
+    ADD CONSTRAINT bar_nomp_fkey FOREIGN KEY (nomp, barri) REFERENCES "població"(nomp, barri);
+
+
+--
+-- TOC entry 1894 (class 2606 OID 17517)
+-- Name: bar_nomt_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY bar
+    ADD CONSTRAINT bar_nomt_fkey FOREIGN KEY (nomt) REFERENCES tipus(nomt);
+
+
+--
+-- TOC entry 2013 (class 0 OID 0)
+-- Dependencies: 5
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2016-06-19 09:44:33
+
+--
+-- PostgreSQL database dump complete
+--
+
